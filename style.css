@@ -1,0 +1,698 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: gray;
+}
+
+.screen {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        -45deg,
+        #35c3f3 0%,
+        #8b9fe8 20%,
+        #e681d8 39%,
+        #ffa9a4 76%,
+        #fed2ce 100%
+    );
+}
+
+.container {
+    background-color: white;
+    width: 925px;
+    height: 630px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+    /* GLASS */
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.57);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* DIVISORIA */
+.divisoria {
+    background-color: #3c3d3e7d;
+    height: 100%;
+    width: 1px;
+}
+
+/* PARTE DO MENU */
+.menu {
+    /* background-color: rgb(255, 255, 255); */
+    height: 630px;
+    width: 110px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.windows-controls {
+    display: flex;
+    width: 70px;
+    height: 15px;
+    /* background-color: yellow; */
+    justify-content: space-between;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.131));
+}
+
+#control1 {
+    width: 15px;
+    height: 15px;
+    background-color: #ee665a;
+    border-radius: 50%;
+}
+
+#control2 {
+    width: 15px;
+    height: 15px;
+    background-color: #dfc04c;
+    border-radius: 50%;
+}
+
+#control3 {
+    width: 15px;
+    height: 15px;
+    background-color: #64c456;
+    border-radius: 50%;
+}
+
+.picture {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture img {
+    height: 6rem;
+    filter: drop-shadow(3px 3px 5px #00000076);
+}
+
+/* ALINHAMENTO DOS ICONES */
+.icons {
+    display: flex;
+    flex-direction: column;
+    /* gap: 30px; */
+    justify-content: space-between;
+    /* background-color: yellow; */
+    width: 50px;
+    height: 350px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* PROPRIEDADE DO QUADRADO ATRÁS DO ICONE */
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    background-color: #f2f2f2;
+    color: #a0a2a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* HOVER DO QUADRADO DOS ICONES */
+/* HOOVER DO ICONE */
+.icon:hover {
+    background-color: #dadada;
+    color: #2c2d2e;
+    transition: 0.5s;
+}
+
+#home {
+    color: #3c3d3e;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    /* background-color: #e7e7e7; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo i {
+    color: #707072;
+}
+
+.title {
+    width: 700px;
+    height: 40px;
+    /* background-color: #f4f4f4; */
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 1em;
+    justify-content: space-between;
+}
+
+.title-icons-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    gap: 2vh;
+}
+
+/* QUADRADO ARRENDONDADO QUE AGREGA OS DOIS ICONES DO LADO DO TITULO DASHBOARD */
+
+#titleIcons {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 17px;
+    justify-content: space-evenly;
+    color: #707072;
+
+    filter: drop-shadow(4px 4px 3px #00000016);
+}
+
+/* HOVER DOS ICONES DO TITULO */
+#titleIcons i:hover {
+    color: #929293;
+}
+
+/* Pequena Linha entre o símbolo de calendário e sininho do título */
+#title-bar {
+    width: 1px;
+    height: 100%;
+    background-color: rgb(75, 75, 75);
+}
+
+.fa-solid {
+    height: auto;
+    /* color: white; */
+}
+
+/* Botão no Title */
+#btn-title {
+    width: 100px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+/* PARTE DO DASH BOARD */
+.dash-container {
+    /* background-color: white; */
+    height: 630px;
+    width: 775px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Parte dos Dashboards - Quadrados */
+.dashs {
+    width: 700px;
+    height: 175px;
+    /* background-color: rgb(186, 186, 186); */
+    display: flex;
+    justify-content: space-between;
+}
+
+#dash1 {
+    height: 100%;
+    width: 225px;
+    border-radius: 20px;
+    background-color: #23262c;
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+/* DASH 1 CONTEÚDO */
+
+#dash1 h4 {
+    font-size: 0.9em;
+    color: white;
+}
+
+#dash1-title {
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+    /* background-color: white; */
+}
+
+.barras {
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    gap: 0.5em;
+    /* background-color: rgb(151, 196, 73); */
+    height: 110px;
+    width: 193px;
+}
+
+/* ANIMAÇÕES */
+
+.bar {
+    height: 0;
+    width: 13px;
+    border-radius: 10px;
+    background-color: #7b7d80;
+    animation: carregar 2s ease forwards;
+}
+
+.bar:hover {
+    filter: brightness(1.5);
+    transition: 0.3s;
+}
+
+#bar5 {
+    background-color: #ff0000;
+}
+
+#bar5:hover {
+    filter: brightness(1);
+    background-color: #d23030;
+}
+
+#bar1 {
+    --bar-height: 90px;
+}
+#bar2 {
+    --bar-height: 70px;
+}
+#bar3 {
+    --bar-height: 20px;
+}
+#bar4 {
+    --bar-height: 80px;
+}
+#bar5 {
+    --bar-height: 110px;
+}
+#bar6 {
+    --bar-height: 87px;
+}
+#bar7 {
+    --bar-height: 30px;
+}
+
+@keyframes carregar {
+    0% {
+        height: 0;
+    } /* Início da animação */
+    100% {
+        height: var(--bar-height);
+    } /* Fim da animação */
+}
+
+/* /// */
+
+.days {
+    display: flex;
+    /* align-items: end; */
+    justify-content: space-evenly;
+    gap: 0.5em;
+    color: black;
+    cursor: default;
+}
+
+.days p {
+    width: 13px;
+    border-radius: 10px;
+    color: #7b7d80;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#dash2 {
+    height: 100%;
+    width: 225px;
+    border-radius: 20px;
+    background-color: #e7e7e7;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+#dash2 h4 {
+    font-size: 0.9em;
+}
+
+/* BARRAS DO DASH2 */
+
+.barras2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    /* background-color: red; */
+    height: 97px;
+    width: 180px;
+    margin-top: 0.5em;
+}
+
+.bar2 {
+    height: 13px;
+    width: 0;
+    background-color: #2c2d2e;
+    border-radius: 10px;
+    animation: fillProgress 2s ease forwards;
+}
+
+.bar2:hover {
+    filter: brightness(2);
+    transition: 0.3s;
+}
+
+#sBar3 {
+    background-color: #ff0000;
+}
+
+#sBar1 {
+    --bar-width: 90px;
+}
+#sBar2 {
+    --bar-width: 120px;
+}
+#sBar3 {
+    --bar-width: 170px;
+}
+#sBar4 {
+    --bar-width: 80px;
+}
+#sBar5 {
+    --bar-width: 40px;
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    } /* Largura inicial */
+    to {
+        width: var(--bar-width);
+    } /* Largura final */
+}
+
+/* FIM DAS BARRAS DO DASH2 */
+
+/* DIAS DO DASH2 */
+
+.days2 {
+    margin-top: 0.7em;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8em;
+    cursor: default;
+}
+
+/*  */
+#dash3 {
+    height: 100%;
+    width: 225px;
+    border-radius: 20px;
+    background-color: #cf2b24;
+
+    /* REMOVER A PARTIR DAQUI */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    box-sizing: border-box;
+    font-size: small;
+    color: white;
+}
+
+.dash3-title-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dash3 h4 {
+    background-color: white;
+    color: #23262c;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+}
+
+#dash3 p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+/* Workouts */
+
+.workouts {
+    width: 700px;
+    height: 100px;
+    /* background-color: white; */
+    gap: 1em;
+    display: grid;
+}
+
+.workouts h3 {
+    font-size: 0.8em;
+}
+
+.workouts h3 {
+    padding-left: 1em;
+    margin: 0;
+}
+
+.workouts-bars {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#workout-bar1 {
+    width: 330px;
+    height: 60px;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+
+.workout-bar1-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+    font-size: 0.8em;
+}
+
+.workout-bar2-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1em;
+    font-size: 0.8em;
+}
+
+#workout-bar2 {
+    width: 330px;
+    height: 60px;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.userpictures {
+    display: flex;
+}
+
+.userpic {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    background-color: black;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border: 0.1em white;
+    border-style: solid;
+}
+
+.userpic + .userpic {
+    margin-left: -10px; /* Ajuste conforme necessário */
+}
+
+.userpic + .userpic + .userpic {
+    margin-left: -10px; /* Ajuste conforme necessário */
+}
+
+#picturePerson1 {
+    width: 50px;
+    /* margin-right: .5em; */
+}
+
+#picturePerson2 {
+    width: 80px;
+}
+
+#picturePerson3 {
+    width: 45px;
+}
+
+/* ESTILO ANTIGO DAS BARRAS FEITO POR MIM
+
+
+#bar1 {
+    height: 90px;
+    width: 13px;
+    border-radius: 10px;
+    background-color: #7b7d80;
+    animation: carregar 2s ease forwards;
+}
+
+
+#bar2 {
+    height: 70px;
+    width: 13px;
+    border-radius: 10px;
+    background-color: #7b7d80;
+    animation: carregar2 2s ease forwards;
+
+}
+
+#bar3 {
+    height: 20px;
+    width: 13px;
+    border-radius: 10px;
+    background-color: #7b7d80;
+    animation: carregar3 2s ease forwards;
+
+}
+
+#bar4 {
+    height: 80px;
+    width: 13px;
+    border-radius: 10px;
+    background-color: #7b7d80;
+    animation: carregar4 2s ease forwards;
+
+}
+
+#bar5 {
+    height: 110px;  
+    width: 13px;
+    border-radius: 10px;
+    background-color: #ff0000;
+    animation: carregar5 2s ease forwards;
+
+}
+
+#bar6 {
+    height: 87px;
+    width: 13px;
+    border-radius: 10px;
+    background-color: #7b7d80;
+    animation: carregar6 2s ease forwards;
+
+}
+
+#bar7 {
+    height: 30px;
+    width: 13px;
+    border-radius: 10px;
+    background-color: #7b7d80;
+    animation: carregar7 2s ease forwards;
+}
+
+
+
+@keyframes carregar {
+    0% { height: 0; } 
+    100% { height: 90px; }
+}
+
+@keyframes carregar2 {
+    0% { height: 0; } 
+    100% { height: 70px; }
+}
+
+@keyframes carregar3 {
+    0% { height: 0; } 
+    100% { height: 20px; }
+}
+
+@keyframes carregar4 {
+    0% { height: 0; } 
+    100% { height: 80px; }
+}
+
+@keyframes carregar5 {
+    0% { height: 0; } 
+    100% { height: 110px; }
+}
+
+@keyframes carregar6 {
+    0% { height: 0; } 
+    100% { height: 87px; }
+}
+
+@keyframes carregar7 {
+    0% { height: 0; } 
+    100% { height: 30px; }
+} 
+
+*/
+
+/* ÁREA DO GRÁFICO */
+
+.area-graph {
+    width: 700px;
+    height: 175px;
+    background-color: rgb(186, 186, 186);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
